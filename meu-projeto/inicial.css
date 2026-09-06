@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+/* Configurações do Corpo da Página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Margarine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff4081;
+    background: url(imagens/fundoinicial.png) center / cover no-repeat fixed;
+    cursor: url("imagens/cursor.ico"), auto;
+
+    /* Alinhamento estrutural */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Estilizado (Efeito Glassmorphic) */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 4%; 
+    background: rgba(255, 245, 247, 0.85); /* Fundo rosa bem sutil e translúcido */
+    backdrop-filter: blur(8px); /* Desfoca suavemente o fundo atrás do header */
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 4px solid #ff1493; /* Linha mais viva */
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.15);
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header P {
+    font-family: "Bitcount Grid Double", system-ui;
+    font-size: 38px; 
+    text-align: center;
+    color: #ff1493; 
+    margin: 0;
+    text-shadow: 2px 2px 0px #fff, 5px 5px 0px rgba(255, 182, 193, 0.8); 
+    flex-grow: 1; 
+    letter-spacing: 1px;
+}
+
+/* Caixa Central de Botões (Mais Clean e Destacada) */
+#tela {
+    background: rgba(255, 255, 255, 0.92); /* Branco puro com opacidade para dar destaque */
+    border: 3px solid #ff69b4; 
+    border-radius: 30px; /* Bordas ainda mais redondas e fofas */
+    padding: 45px 35px;
+    box-shadow: 0 12px 35px rgba(255, 20, 147, 0.25); /* Sombra mais profunda */
+    display: flex;
+    flex-direction: column; 
+    gap: 18px; /* Espaçamento ligeiramente mais compacto e elegante */
+    width: 90%;
+    max-width: 340px; 
+    text-align: center;
+    margin: auto; /* Centralização perfeita na vertical e horizontal */
+    box-sizing: border-box;
+}
+
+/* Botões Customizados Premium */
+button {
+    font-family: "Margarine", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff1493, #ff69b4); /* Degradê fofo e moderno */
+    border: none;
+    border-radius: 25px; 
+    padding: 14px 22px;
+    cursor: url("imagens/click.ico"), auto !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave estilo "bouncy" */
+    box-shadow: 0 4px 12px rgba(255, 20, 147, 0.3);
+}
+
+/* Efeito de Interação nos Botões */
+button:hover {
+    background: linear-gradient(135deg, #ff69b4, #ff8da1); /* Inverte/suaviza o degradê */
+    transform: translateY(-3px) scale(1.03); /* Eleva o botão de forma lúdica */
+    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.45);
+}
+
+button:active {
+    transform: translateY(1px); /* Feedback de clique físico */
+}
+/* Estilização do bloco de Boas-Vindas dentro da #tela */
+.boas-vindas h2 {
+    font-size: 20px;
+    color: #ff1493;
+    margin-bottom: 5px;
+}
+
+.boas-vindas p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Agrupador de botões para manter o espaçamento correto */
+.grupo-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Rodapé Simples e Harmonioso */
+.footer-inicial {
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* Garante que fique sempre no final da página */
+    background: rgba(255, 240, 245, 0.8);
+    backdrop-filter: blur(5px);
+    border-top: 2px dashed #ff69b4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-inicial p {
+    margin: 0;
+    font-size: 12px;
+    color: #ff1493;
+    font-weight: bold;
+}

@@ -1,0 +1,410 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+
+
+/* corpo */
+body {
+    
+    font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+cursor:
+url("imagens/cursor.ico"),
+auto;
+    background: url(imagens/fundo.png) center / cover no-repeat fixed;
+    color: #ff4081; /* Rosa choque hyperfem */
+}
+button{
+    cursor:
+url("imagens/click.ico"),
+auto !important;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Move o botão para a esquerda, pesquisa para a direita e mantém o título no meio */
+    padding: 15px 2%; 
+    background: rgba(255, 240, 245, 0.9); 
+    border-bottom: 3px solid #ff69b4; 
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+    position: relative;
+}
+
+header P {
+    font-family: "Bitcount Grid Double", system-ui;
+    font-size: 35px; /* Reduzido levemente para não esmagar a barra e o botão */
+    text-align: center;
+    color: #ff1493; 
+    margin: 0;
+    text-shadow: 2px 2px 0px #fff, 4px 4px 0px #ffb6c1; 
+    flex-grow: 1; /* Faz o título preencher e centralizar no espaço restante */
+}
+
+/* Variáveis de Personalização Padronizadas com a Wiki */
+:root {
+    --bg-sidebar: #fff0f5;       /* Fundo igual ao do header (Lavender Blush) */
+    --cor-texto: #ff1493;        /* Rosa choque do título */
+    --cor-hover: #ff69b4;        /* Rosa médio para o hover */
+    --largura-sidebar: 250px;    
+}
+
+/* Botão de Abrir (Ajustado para o Header) */
+.btn-abrir {
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: var(--cor-texto);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+    font-weight: bold;
+    transition: background 0.2s;
+    flex-shrink: 0; /* Impede o botão de achatar em telas menores */
+}
+#menu {
+    flex-shrink: 0; /* Impede a barra de pesquisa de espremer */
+    display: flex;
+    align-items: center;
+}
+.btn-abrir:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Estrutura do Menu Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: calc(-1 * var(--largura-sidebar)); 
+    width: var(--largura-sidebar);
+    height: 100%;
+    background-color: rgba(255, 240, 245, 0.98); 
+    transition: left 0.3s ease; 
+    box-shadow: 4px 0 10px rgba(255, 105, 180, 0.2); 
+    z-index: 2000; /* altere de 1000 para 2000 */
+    border-right: 3px solid #ff69b4; 
+}
+
+/* Estado Ativo (Aberto) */
+.sidebar.ativo {
+    left: 0;
+}
+
+/* Cabeçalho do Menu */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--cor-texto);
+    border-bottom: 2px solid #ffb6c1;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-size: 22px;
+}
+
+/* Botão de Fechar */
+.btn-fechar {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: var(--cor-texto);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn-fechar:hover {
+    color: var(--cor-hover);
+}
+
+/* Links de Navegação */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar-links a {
+    padding: 15px 20px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.sidebar-links a:hover {
+    background-color: rgba(255, 105, 180, 0.1); /* Fundo rosa bem claro no hover */
+    padding-left: 25px; /* Efeito sutil de deslocamento */
+}
+/* Botão de Música na Sidebar */
+.sidebar-audio-btn {
+    background: none;
+    border: none;
+    color: var(--cor-texto);
+    font-family: "Margarine", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-align: left;
+    width: 100%;
+    cursor: url("imagens/click.ico"), auto !important;
+    transition: all 0.2s;
+    display: block;
+}
+
+.sidebar-audio-btn:hover {
+    background-color: rgba(255, 105, 180, 0.1);
+    padding-left: 25px;
+}
+
+/* Classe que aplica o risco na palavra quando desativada */
+.sidebar-audio-btn.desativado {
+    text-decoration: line-through;
+    color: #6c757d; /* Muda para uma cor cinza neutra opcional */
+    text-decoration-color: #ff1493; /* O risco fica rosa choque */
+}
+/* Container do Player dentro da Sidebar */
+.sidebar-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    background: rgba(255, 105, 180, 0.1); /* Fundo rosa bem sutil */
+    border: 2px dashed #ff69b4;
+    border-radius: 15px;
+}
+
+/* Texto acima do Player */
+.sidebar-player span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    margin-bottom: 8px;
+}
+
+/* Reduz o tamanho do player padrão para caber certinho na largura do menu */
+.sidebar-player audio {
+    width: 100%;
+    max-height: 30px; /* Deixa o player mais fininho e discreto */
+    outline: none;
+}
+
+/* Estilização do Botão do Dropdown do Autor */
+.bnt-autor-dropdown {
+   
+    background-color: #ff69b4 !important; /* Rosa Chiclete */
+    border: 2px solid #ff1493 !important; /* Borda Rosa Choque */
+    border-radius: 20px !important;
+    font-weight: bold;
+    color: #000000 !important;
+    transition: background-color 0.2s ease;
+}
+
+.bnt-autor-dropdown:hover {
+    background-color: #ff1493 !important; /* Fica mais escuro no hover */
+}
+
+/* Caixa de Informações do Autor (Dropdown Menu) */
+.sobre-autor-box {
+    font-family: Arial, sans-serif !important;
+    background-color: #fce6ed !important; 
+    border: 3px solid #ff69b4 !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2) !important;
+}
+
+/* Links das Redes Sociais do Autor */
+.sobre-autor-box a {
+    color: #ff1493 !important;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+.sobre-autor-box p {
+     font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #ff1493 !important;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.sobre-autor-box a:hover {
+    color: #ff69b4 !important;
+    text-decoration: underline !important;
+}
+
+/* Divisor interno da caixinha */
+.sobre-autor-box .dropdown-divider {
+    border-top: 2px dashed #ff69b4 !important;
+    opacity: 0.5;
+}
+
+/* pesquisa */
+
+.navbar.bg-warning {
+    background-color: #ffb6c1 !important; /* Rosa bebê */
+    border-bottom: 2px solid #ff69b4;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+}
+
+.navbar input[type="search"] {
+    cursor:
+url("imagens/cursor\ igitado.ico"),
+auto;
+    padding: 8px 15px;
+    border-radius: 30px; /* Mais arredondado/fofo */
+    border: 2px solid #ff69b4;
+    outline: none;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.navbar input[type="search"]:focus {
+    box-shadow: 0 0 10px #ff1493;
+}
+
+.navbar button[type="submit"] {
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #ff1493 !important; /* Botão Pink */
+    color: #ffffff;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.navbar button[type="submit"]:hover {
+    background: #ff69b4 !important;
+    transform: scale(1.05); /* Efeito de pulso fofo */
+}
+
+/* container */
+main.container {
+    background: rgba(255, 255, 255, 0.92); /* Efeito clean glass */
+    padding: 25px;
+    border-radius: 25px; /* Bordas super suaves */
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.15); /* Glow rosa sutil */
+}
+
+/* ==================== CARDS FIX ==================== */
+#container-cards .card {
+    background-color: #fff0f5 !important; /* Fundo Lavanda/Rosa Pastel */
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease; /* Transição bouncy/fofa */
+    height: 100%; 
+}
+
+/* Espaçamento interno do corpo do card */
+#container-cards .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito de hover suave */
+#container-cards .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(255, 20, 147, 0.3); /* Brilho rosa ao passar o mouse */
+    border-color: #ff1493;
+}
+
+#container-cards .card-title {
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#container-cards .card-text {
+    color: #6c757d;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+/* Botão VER MAIS customizado */
+#container-cards .btn-primary {
+     cursor:
+url("imagens/click.ico"),
+auto !important;
+    background-color: #ff69b4 !important; /* Rosa Chiclete */
+    border: none !important;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white !important;
+    padding: 10px 20px;
+    width: 100%; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    transition: all 0.3s ease;
+}
+
+#container-cards .btn-primary:hover {
+    background-color: #ff1493 !important;
+    box-shadow: 0 6px 15px rgba(255, 20, 147, 0.5);
+}
+
+/* Ajusta a altura da imagem para não distorcer */
+#container-cards .card-img-top {
+    height: 100% !important; 
+}
+
+/* detalhes pagina */
+#detalhe-item img {
+    border: 5px solid #ffb6c1;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+}
+
+#detalhe-item h2 {
+    color: #ff1493;
+}
+
+#detalhe-item h3 {
+    color: #ff69b4;
+    border-bottom: 2px dashed #ffb6c1; /* Linha tracejada fofa */
+    padding-bottom: 5px;
+}
+
+#detalhe-item .card {
+    background-color: rgba(255, 240, 245, 0.6) !important;
+    border: 2px dashed #ff69b4;
+    border-radius: 15px;
+}
+
+footer.bg-dark {
+    background-color: #4a0e2e !important; /* Vinho super escuro para contrastar elegantemente com o rosa */
+    color: #ffb6c1 !important;
+    font-size: 0.9em;
+    border-top: 4px solid #ff1493;
+}
+
+aside {
+    border-left: 4px solid #ff69b4 !important;
+    background-color: #fffafb;
+    border-radius: 0 15px 15px 0;
+}
+
+aside h3 {
+    color: #ff1493;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    main.container {
+        padding: 15px;
+        margin-top: 10px;
+    }
+}
+
+

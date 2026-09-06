@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayman Origins Archive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header >
+       <p> RAYMAN ORIGINS WIKI</p>
+
+
+    <button class="btn-abrir" id="btnAbrir">&#9776; Menu</button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            
+            <h5> menu</h5>
+            <button class="btn-fechar" id="btnFechar">&times;</button>
+        </div>
+    <nav class="sidebar-links">
+    <div class="sidebar-player">
+        <span>
+       <img src="imagens/electoon.ico" alt="">escute e relaxe<img src="imagens/electoon.ico" alt=""> </span>
+        <audio src="audio/musica.mp3" controls loop></audio>
+    </div>
+    
+    <a href="cadastro-itens.html" id="linkCadastroItens"><img src="imagens/cursor.ico" alt=""> Cadastrar Item</a>
+    <a href="perfil.html"><img src="imagens/click.ico" alt=""> Perfil</a>
+     <a href="inicial.html" id="linkAuth"><img src="imagens/cursor igitado.ico" alt=""> Login / Cadastro</a>
+     <a href="inicial.html"><img src="imagens/mosquito.ico" alt="">home</a>
+    <a href="#" id="linkLogout" class="d-none text-danger">🚪 Sair (Logout)</a>
+   
+
+
+    <div class="dropdown my-2 px-3">
+        <button class="btn btn-secondary dropdown-toggle w-100 bnt-autor-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="imagens/edith up.ico" alt=""> Sobre a autora
+        </button>
+        <div class="dropdown-menu p-3 sobre-autor-box" style="width: 230px;">
+            <div class="text-center mb-2">
+                <img src="imagens/avatar.png" alt="Avatar do Autor" class="rounded-circle border" style="width: 70px; height: 70px; object-fit: cover;">
+            </div>
+            <h6 class="dropdown-header text-center p-0 text-dark"><strong>ILONE LETICIA <img src="imagens/globox.ico" alt=""></strong></h6>
+            <p class="text-muted small text-center mb-2">Análise e Desenvolvimento de Sistemas</p>
+            <p class="small text-center text-secondary mb-2" style="font-size: 11px; line-height: 1.3;">meu personagem favorito é o Globox</p>
+            <hr class="dropdown-divider">
+            <span class="dropdown-item-text small text-muted"><strong>periodo:</strong> 1º perido</span>
+            <div class="d-flex justify-content-around mt-2">
+                <a href="https://github.com/IloneLeticia" target="_blank" class="small text-decoration-none">GitHub</a>
+                
+              
+            </div>
+        </div>
+    </div>
+
+   
+</nav>
+    </aside>
+
+<div id="menu">
+
+
+    
+</div>
+
+    </header>
+
+    <nav class="navbar navbar-expand bg-warning p-2 justify-content-center" id="navegaçao">
+        <form class="d-flex" role="search" onsubmit="event.preventDefault();">
+            <input class="form-control me-2 rounded-pill" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-dark rounded-pill px-4" type="submit">go!</button>
+        </form>
+        
+    </nav>
+
+    <main class="container my-4">
+        <section class="mb-5 shadow rounded overflow-hidden">
+    <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carrossel-dinamico">
+            
+            <div class="carousel-item active">
+                <img src="imagens/banner.png" class="d-block w-100" alt="Descrição da imagem fixa">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+</section>
+
+        <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="container-cards">
+    
+</section>
+
+       
+        <aside class="my-4 p-3 bg-light rounded border">
+            <h3>Conheça mais:</h3>
+            <ul>
+                <li><a href="https://store.steampowered.com/app/207490/Rayman_Origins/?l=portuguese" target="_blank" class="text-decoration-none">Compre o jogo oficial na loja</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2026 - Ilone Letícia - Todos os direitos dos personagens reservados à Ubisoft. Página criada para fins acadêmicos (Fã-site).</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+<script src="js/app.js"></script>
+<script src="js/inicial.js"></script>
+</body>
+</html>

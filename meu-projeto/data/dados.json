@@ -1,0 +1,82 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nomeCategoria": "Heróis",
+      "imagemCard": "imagens/herois.png",
+      "breveDescricao": "os herois da clareira dos sonhos",
+      "imagemCarrossel": "https://i.ytimg.com/vi/t2mPyjdxleo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBvMWnOtlhiseJfhQDkpFsk7g0CWQ",
+      "detalhes": {
+        "imagemMaior": "imagens/imagemherois.jpg",
+        "titulo": "Destinos unidos pelo caos",
+        "descricaoElaborada": "Quando as profundezas do Submundo despertam e a Clareira dos Sonhos é corrompida pelos pesadelos, a salvação do mundo recai sobre o mais improvável grupo de lendas",
+        "descricaoSubitens": "herois:\n Rayman, O herói sem membros que carrega o peso do mundo em seus punhos flutuantes.\n\nGlobox, O gigante azul cujo coração bondoso esconde uma força devastadora e incontrolável.\n\nOs Teensies, Os últimos guardiões da magia antiga, lutando para que a luz do mundo não se apague.",
+        "subitens": [
+          {
+            "id": "h1",
+            "nome": "Globox",
+            "imagem": "https://i.pinimg.com/webp87/1200x/7c/f0/c9/7cf0c940c66b790c5fddf488efec3060.webp",
+            "imagem2": "",
+            "descricao": "O gigante azul cujo coração bondoso esconde uma força devastadora e incontrolável."
+          },
+          {
+            "id": "h2",
+            "nome": "Os Teensies",
+            "imagem": "https://i.pinimg.com/736x/14/d7/90/14d790b11c9b7e13ba61b8aaff9a6cc6.jpg",
+            "imagem2": "",
+            "descricao": "Os últimos guardiões da magia antiga, lutando para que a luz do mundo não se apague."
+          },
+          {
+            "id": "h3",
+            "nome": "Rayman",
+            "imagem": "https://i.pinimg.com/736x/c8/86/c7/c886c7af6b21015fc701d2fdec2da111.jpg",
+            "imagem2": "",
+            "descricao": "O herói sem membros que carrega o peso do mundo em seus punhos flutuantes." 
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nomeCategoria": "Mundos",
+      "imagemCard": "imagens/mundos.png",
+      "breveDescricao": "Os ambientes mágicos visitados na jornada",
+      "imagemCarrossel": "https://images.gamebanana.com/img/ss/mods/6989c6d818c92.jpg",
+      "detalhes": {
+        "imagemMaior": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxFxsxYc02f3JKmGNHy7BxsRc_-ZC4JlV5w&s",
+        "titulo": "a clareira dos sonhos",
+        "descricaoElaborada": "A jornada se divide em biomas temáticos únicos. O mapa conta com:",
+       "descricaoSubitens": "Selva dos Trambolhos: Selva rítmica com cipós e plantas carnívoras.\n\nDeserto dos Alaúdes: Deserto feito de instrumentos musicais e tambores.\n\nTerra da Gula: Banquete misturando gelo picado e pimentas flamejantes.\n\nMar da Tranquilidade: Oceano cristalino com cavernas cheias de águas-vivas.\n\nPico Místico: Montanhas geladas com templos e ventanias fortes.\n\nNuvens Mal-Humoradas: Fortaleza industrial cheia de robôs e engrenagens.\n\nTerra dos Mortos-Vivos: Submundo secreto com o desafio mais difícil.",
+        "subitens": []
+      }
+    },
+    {
+      "id": 3,
+      "nomeCategoria": "Inimigos",
+      "imagemCard": "imagens/inimigos.png",
+      "breveDescricao": "Os terríveis monstros e chefes corrompidos",
+      "imagemCarrossel": "https://i.ytimg.com/vi/S2JYyFk-ZPM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBYwtq5BN0W7QMEPuufe2Oli-Vduw",
+      "detalhes": {
+        "imagemMaior": "https://i.ytimg.com/vi/6oiN9LK7l6s/maxresdefault.jpg",
+        "titulo": "Os Pesadelos da Clareira",
+        "descricaoElaborada": "Os inimigos da Clareira dos Sonhos surgiram a partir dos terríveis pesadelos do Bubble Dreamer (o Construtor de Bolhas). Quando derrotados, eles se inflam e explodem como bolhas inofensivas.",
+        "descricaoSubitens": "Os inimigos da Clareira dos Sonhos são a manifestação física dos piores pesadelos do Construtor de Bolhas. \n\n Liderados por monstros corrompidos e criaturas bizarras, como os Darktoons e os Lividstones, eles invadiram os mundos para espalhar o caos e aprisionar os Electoons.",
+        "subitens": []
+      }
+    },
+    {
+      "id": 4,
+      "nomeCategoria": "NPCs",
+      "imagemCard": "imagens/npcs.png",
+      "breveDescricao": "Aliados nativos e divindades da clareira",
+      "imagemCarrossel": "https://i.ytimg.com/vi/Sxf5WFmxcy0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD4xnRRHHZTm40pJJVJPJMftiTXKg",
+      "detalhes": {
+        "imagemMaior": "https://i.ytimg.com/vi/yte51WYqDTs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBLO7nIEcRCwiBBQV35-s7kCEmcJg",
+        "titulo": "",
+        "descricaoElaborada": "Os aliados da Clareira dos Sonhos são os guardiões e guias espirituais que ajudam a manter o equilíbrio do mundo. Liderados pelas poderosas Ninfas, que concedem novas habilidades aos heróis, e por Murfy, a mosca guia, esses personagens guiam os jogadores através dos biomas. \n\n Eles oferecem conselhos, gerenciam os Lums coletados e lutam para acordar o Construtor de Bolhas de seus terríveis pesadelos.",
+        "descricaoSubitens": "No coração do Clareamento dos Sonhos, os personagens não jogáveis de Rayman Origins carregam o peso de um mundo à beira do colapso, atuando como os pilares de uma realidade fragmentada pelo caos. Eles não são meros espectadores, mas sim prisioneiros de suas próprias terras e guardiões de segredos antigos. \n\n As Ninfas, entidades divinas e criadoras, representam a própria essência da liberdade e do poder; sua captura e subsequente aprisionamento nas garras das forças das trevas mergulham o mundo em um silêncio impotente, onde cada resgate não é apenas uma vitória mecânica, mas a devolução de uma parte da alma e da capacidade de lutar de Rayman. \n\n Enquanto isso, figuras como o Bubble Dreamer personificam a fragilidade cósmica, um deus cujo repouso profundo e pesadelos têm o poder real de moldar e destruir a própria existência. Até mesmo as interações cotidianas com o Mágico, que inicialmente se disfarça como um aliado benevolente e meticuloso contador de conquistas, são impregnadas de uma ironia trágica, mascarando uma traição sombria que culmina na revelação de um arquiteto da própria ruína do clareamento. \n\n Assim, cada habitante deste universo bizarro, das fadas aprisionadas aos guias silenciosos, compõe uma sinfonia dramática de sobrevivência e engano, onde a própria sobrevivência do mundo depende de arrancar esses seres das sombras do esquecimento.",
+        "subitens": []
+      }
+    }
+  ]
+}
